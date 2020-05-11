@@ -1,0 +1,213 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// *** global
+$pink: hsl(322, 100%, 66%);
+$darkCyan: hsl(192, 100%, 9%);
+$paleBlue: hsl(207, 100%, 98%);
+
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+section {
+  padding: 0 1em 0 1em;
+  text-align: center;
+}
+
+.sectionHeader {
+  margin-bottom: 1rem;
+}
+
+.sectionImage {
+  width: 100%;
+  margin: 5em 0 5em 0;
+}
+
+.btn {
+  background-color: $pink;
+  color: white;
+  padding: 0.5em 2em;
+  border-radius: 50px;
+  text-decoration: none;
+}
+// *** global
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  padding: 1em 1em 3em 1em;
+
+  img {
+    width: 5rem;
+  }
+
+  a {
+    float: right;
+    padding: 0.2em 1.5em;
+    border: 1px solid $pink;
+    border-radius: 15px;
+    font-size: 0.6rem;
+    text-decoration: none;
+  }
+}
+
+.community {
+  h1 {
+    margin: 0 1em 1em 1em;
+  }
+
+  p {
+    margin-bottom: 3em;
+  }
+
+  article {
+    margin: 0 auto 4em;
+    width: 40%;
+    text-align: left;
+
+    .icon-communities {
+      display: block;
+      width: 1rem;
+    }
+    .count {
+      display: block;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 0.3rem;
+      line-height: 3rem;
+    }
+    .countDescription {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.cta {
+  margin: 5em 0;
+
+  h3 {
+    margin-bottom: 3em;
+  }
+}
+
+footer {
+  background-color: $darkCyan;
+  color: white;
+  padding: 5em 1em 1em 1em;
+
+  form {
+    margin-bottom: 3em;
+    h2 {
+      margin-bottom: 1em;
+      text-transform: uppercase;
+    }
+
+    input {
+      margin-top: 2em;
+      width: 100%;
+      height: 2rem;
+      border-radius: 4px;
+      border: none;
+    }
+
+    .btn-square {
+      float: right;
+      margin-top: 0.75rem;
+      text-align: right;
+      border-radius: 4px;
+    }
+  }
+
+  .contact {
+    margin-top: 8rem;
+    img {
+      width: 5rem;
+      color: white;
+    }
+
+    .babble {
+      margin: 0.75rem 0 2rem 0;
+    }
+
+    .contactItem {
+      margin-bottom: 0.75em;
+      .contactIcon {
+        display: inline-block;
+        width: 0.8rem;
+        margin-right: 0.75em;
+      }
+    }
+  }
+
+  .socialIcons {
+    margin: 2rem 0;
+    .fab {
+      margin-right: 0.5em;
+    }
+  }
+
+  // frontendmentor css...
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(227, 27%, 81%);
+  }
+}
+
+@media (min-width: 768px) {
+  .sectionImage {
+    margin: 3em 0 5em 0;
+  }
+
+  .article-wrapper {
+    display: flex;
+
+    article {
+      width: 20%;
+    }
+  }
+
+  .grow {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 46%;
+      order: 2;
+    }
+
+    .grow-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 46%;
+      order: 1;
+
+      h3,
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
