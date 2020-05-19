@@ -3,6 +3,8 @@ In the footer, I had to change the Huddle SVG to have a fill colour of white (ot
 
 # Frontend Mentor - Huddle landing page with curved sections
 
+I had fixed the accessibility issue, but something went haywire with a branch that I just cannot figure out!
+
 ![Header/intro section for the Huddle landing page with curved sections](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
