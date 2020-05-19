@@ -132,10 +132,17 @@ footer {
 
     .btn-square {
       float: right;
+      height: 2rem;
       margin-top: 0.75rem;
-      text-align: right;
       border-radius: 4px;
       box-shadow: none;
+      border: none;
+      cursor: pointer;
+
+      &:focus,
+      &:hover {
+        border: 1px solid #fff;
+      }
     }
   }
 
@@ -177,7 +184,7 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .sectionImage {
     margin: 3em 0 5em 0;
   }
@@ -229,7 +236,19 @@ footer {
     .contact {
       order: -1;
       margin-top: 0;
-      padding-right: 9em;
+      padding-right: 7em;
+    }
+    .subscribe {
+      display: flex;
+      align-items: flex-end;
+
+      input {
+        flex: 1;
+        margin-right: 2em;
+      }
+      button {
+        flex: 0 0 114px;
+      }
     }
   }
 }
